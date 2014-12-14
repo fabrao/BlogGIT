@@ -8,6 +8,7 @@ public class testeBanco {
     public static void main(String[] args) {
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("BlogPU");
         EntityManager manager = factory.createEntityManager();
+        int var = 10;
         manager.close();
         factory.close();
     }
