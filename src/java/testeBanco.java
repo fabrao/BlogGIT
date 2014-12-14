@@ -9,6 +9,7 @@ public class testeBanco {
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("BlogPU");
         EntityManager manager = factory.createEntityManager();
         manager.close();
+        factory.close();
     }
     
 }
